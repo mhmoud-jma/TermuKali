@@ -1,0 +1,81 @@
+#!/bin/bash
+
+Colors
+
+GREEN='\033[0;32m' NC='\033[0m'
+
+while true; do clear echo -e "${GREEN}" echo "╔══════════════════════════════════════╗" echo "║      Kali Linux Installer by Zizo   ║" echo "╠══════════════════════════════════════╣" echo "║ 1. Install Kali – Method 1          ║" echo "║ 2. Install Kali – Method 2          ║" echo "║ 3. Install Kali – Method 3          ║" echo "║ 4. Show Available Tools             ║" echo "║ 5. Install Basic Red Team Tools     ║" echo "║ 6. Support the Project (Give a Star)║" echo "║ 7. Exit                             ║" echo "╚══════════════════════════════════════╝" echo -e "${NC}"
+
+read -p "Choose an option: " choice
+
+case $choice in
+    1)
+        pkg install wget -y
+        wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali.sh
+        chmod +x kali.sh
+        ./kali.sh
+        ;;
+    2)
+        pkg update && pkg upgrade -y
+        pkg install wget proot tar -y
+        wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh
+        chmod +x kali.sh
+        ./kali.sh
+        ;;
+    3)
+        pkg install git proot wget -y
+        git clone https://github.com/MFDGaming/Debian-Termux
+        cd Debian-Termux
+        bash Debian.sh
+        ;;
+    4)
+        echo -e "\nAvailable Tools:\n"
+        echo "nmap"
+        echo "whois"
+        echo "dnsutils (dig, nslookup)"
+        echo "net-tools (ifconfig, netstat)"
+        echo "whatweb"
+        echo "nikto"
+        echo "wafw00f"
+        echo "theHarvester"
+        echo "recon-ng"
+        echo "amass"
+        echo "sqlmap"
+        echo "metasploit-framework"
+        echo "hydra"
+        echo "john (John the Ripper)"
+        echo "crunch"
+        echo "zphisher"
+        echo "HiddenEye"
+        echo "SocialFish"
+        echo "T.DROP – https://github.com/mhmoud-jma/T.DROP"
+        read -p "Press Enter to return to menu..."
+        ;;
+    5)
+        echo "Installing basic Red Team tools..."
+        apt update && apt install -y nmap whois dnsutils net-tools whatweb nikto \
+            wafw00f theharvester amass sqlmap metasploit-framework hydra john \
+            crunch git
+        echo "Cloning zphisher, HiddenEye, and SocialFish..."
+        git clone https://github.com/htr-tech/zphisher
+        git clone https://github.com/DarkSecDevelopers/HiddenEye
+        git clone https://github.com/UndeadSec/SocialFish
+        echo "Done installing basic tools."
+        read -p "Press Enter to return to menu..."
+        ;;
+    6)
+        echo "Opening GitHub project page... Please support us with a ⭐"
+        termux-open-url https://github.com/mhmoud-jma/Install.kali
+        ;;
+    7)
+        echo "Goodbye! Stay rooted."
+        exit 0
+        ;;
+    *)
+        echo "Invalid option. Try again."
+        sleep 2
+        ;;
+esac
+
+done
+
