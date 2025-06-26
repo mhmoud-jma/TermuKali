@@ -52,7 +52,7 @@ bash install.sh
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 827C8569F2518CC677FECA1AED65462EC8D5E4C5
 ```
 
-###2. Run the Installer Menu Manually
+### 2. Run the Installer Menu Manually
 
 chmod +x install.sh
 bash install.sh
@@ -60,7 +60,7 @@ bash install.sh
 
 ---
 
-###🧰 Available Tools
+### 🧰 Available Tools
 
 Recon:
 ```
