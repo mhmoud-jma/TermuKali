@@ -24,7 +24,7 @@ A ready-to-use Kali Linux installer for Termux, packed with essential Red Team t
 ## 📸 Screenshots
 
 ### 🔹 Main Menu
-![Main Menu](https://raw.githubusercontent.com/mhmoud-jma/Install.kali/main/Termux1.jpg)
+![Main Menu](https://github.com/mhmoud-jma/Install.kali/blob/main/Termux%201.jpg)
 
 ### 🔹 Tool Installation Interface
 ![Tool Installer](https://raw.githubusercontent.com/mhmoud-jma/Install.kali/main/Termux2.jpg)
