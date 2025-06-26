@@ -21,7 +21,13 @@ A ready-to-use Kali Linux installer for Termux, packed with essential Red Team t
 - `tools/install-tools.sh` → Installs tools like `nmap`, `sqlmap`, `metasploit`, etc.
 - `T.DROP` → A custom Red Team tool from this repo  
   → [T.DROP GitHub](https://github.com/mhmoud-jma/T.DROP)
+## 📸 Screenshots
 
+### 🔹 Main Menu
+![Main Menu](Termux1.jpg)
+
+### 🔹 Tool Installation Interface
+![Tool Installer](Termux2.jpg)
 ---
 
 ## 📥 How to Install
@@ -35,7 +41,7 @@ wget https://github.com/mhmoud-jma/Install.kali/raw/main/kali-installer.zip
 unzip kali-installer.zip
 cd Install.kali
 ---
-2. Run the Installer Menu
+- ' 2. Run the Installer Menu
 
 chmod +x menu.sh
 bash menu.sh
