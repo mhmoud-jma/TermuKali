@@ -39,7 +39,9 @@ pkg install wget unzip -y
 git clone https://github.com/mhmoud-jma/Install.kali.git
 cd /Install.kali
 unzip kali-installer.zip
-cd Install.kali 
+cd kali
+bash  menu.sh
+
 ```
 ---
 ### 2. Run the Installer Menu
