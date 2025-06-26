@@ -36,7 +36,8 @@ A ready-to-use Kali Linux installer for Termux, packed with essential Red Team t
 ```bash
 pkg update && pkg upgrade
 pkg install wget unzip -y
-wget https://github.com/mhmoud-jma/Install.kali/raw/main/kali-installer.zip
+git clone https://github.com/mhmoud-jma/Install.kali.git
+cd /Install.kali
 unzip kali-installer.zip
 cd Install.kali 
 ```
