@@ -42,14 +42,17 @@ git clone https://github.com/mhmoud-jma/Install.kali.git
 cd /Install.kali
 unzip kali-installer.zip
 cd kali
-bash  menu.sh
+chmod +x menu.sh
+bash menu.sh
 
 ```
 ---
 ### 2. Run the Installer Menu
 
 chmod +x menu.sh
+
 bash menu.sh
+
 🧰 Available Tools
 
 Recon: nmap, whois, amass, dnsutils, recon-ng, theHarvester
