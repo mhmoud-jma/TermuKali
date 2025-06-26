@@ -40,19 +40,17 @@ A powerful and ready-to-use Kali Linux installer for Termux, featuring essential
 ### 1. Download and Run the Project
 
 ```bash
-apt update && apt upgrade -y
-apt install unzip git wget -y
+apt update && apt upgrade 
+
 git clone https://github.com/mhmoud-jma/Install.kali.git
 cd Install.kali
-unzip kali-installer.zip
-cd kali
-chmod +x menu.sh
-bash menu.sh
+chmod +x install.sh
+bash install.sh
 ```
 2. Run the Installer Menu Manually
 
-chmod +x menu.sh
-bash menu.sh
+chmod +x install.sh
+bash install.sh
 
 
 ---
