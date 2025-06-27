@@ -28,8 +28,7 @@ A powerful and ready-to-use Kali Linux installer for Termux, featuring essential
 ## 📸 Screenshots
 
 ### 🔹 Main Menu
-![Main Menu](https://github.com/mhmoud-jma/Install.kali/blob/main/Termux%201.jpg)
-
+![Main Menu](photos/Interface.jpg)
 ### 🔹 Run kali
 ![Run kali](https://github.com/mhmoud-jma/Install.kali/blob/main/Termux%202.jpg)
 
