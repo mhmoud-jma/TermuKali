@@ -32,6 +32,7 @@ A powerful and ready-to-use Kali Linux installer for Termux, featuring essential
 ### 🔹 Run kali
 ![Run kali](https://github.com/mhmoud-jma/Install.kali/blob/main/Termux%202.jpg)
 
+To see more screenshots, please visit:(https://github.com/mhmoud-jma/Install.kali/commit/26a59c70124f2e2844666f2b29e58fae783046a3#diff-58916ba9f6962785eaba9773a9a50145633cd8917b32a5c87f80e1440f9343f7)
 ---
 
 ## 📥 How to Install
