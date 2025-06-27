@@ -41,7 +41,7 @@ To see more screenshots, please visit:(https://github.com/mhmoud-jma/Install.kal
 
 ```bash
 apt update && apt upgrade 
-
+apt install proot
 git clone https://github.com/mhmoud-jma/Install.kali.git
 cd Install.kali
 chmod +x install.sh
