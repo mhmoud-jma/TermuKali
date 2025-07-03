@@ -46,8 +46,8 @@ bash
 ```
 apt update && apt upgrade 
 apt install proot git wget
-git clone https://github.com/mhmoud-jma/Install.kali.git
-cd Install.kali
+git clone https://github.com/mhmoud-jma/TermuKali
+cd TermuKali
 chmod +x install.sh
 bash install.sh
 ```
@@ -146,7 +146,10 @@ If you find this project helpful, please consider giving it a ⭐ on GitHub:
 
 > This script is for educational purposes only. The author is not responsible for any misuse. Please use ethically and responsibly.
 
+---
+ 🌟NOTE
 
+A new name has been recently adopted, which is: (Install.kali → TermuKali)
 
 
 ---
