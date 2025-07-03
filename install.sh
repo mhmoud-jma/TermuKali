@@ -2,17 +2,16 @@
 export TERM=xterm-256color
 
 while true; do
-    printf "\033c"  # تنظيف الشاشة في Termux
+    printf "\033c" 
 
-    echo "Kali Linux Installer Menu"
-    echo "=============================="
+    echo "Kali Linux Installer Menu"                                                echo "=============================="
     echo "1. Install Kali (Method 1)"
     echo "2. Install Kali (Method 2)"
-    echo "3. Install Kali (Method 3)"
-    echo "4. Show Available Tools"
-    echo "5. Install Tools inside Kali"
-    echo "6. Support Project (Give a Star ⭐)"
-    echo "7. Exit"
+    echo "3. Install Kali (Method 3)"                                               echo "4. Intsall kali (Nethunter)"
+    echo "5. Show Available Tools"
+    echo "6. Install Tools inside Kali"
+    echo "7. Support Project (Give a Star ⭐)"
+    echo "8. Exit"
     echo "=============================="
     read -p "Choose an option: " option
 
@@ -37,7 +36,17 @@ while true; do
             bash Debian.sh
             cd ..
             ;;
-        4)
+
+       4)
+        pkg update -y && pkg upgrade -y
+        pkg install git wget proot -y
+        git clone https://github.com/Hax4us/Nethunter-In-Termux.git
+        cd Nethunter-In-Termux
+        chmod +x kalinethunter
+        echo  " This version is a little different it needs to run this command    ./kalinethunter"
+         ;;
+       5)
+
             echo ""
             echo "Available Tools:"
             echo "- nmap"
@@ -61,10 +70,10 @@ while true; do
             echo "- T.DROP => https://github.com/mhmoud-jma/T.DROP"
             read -p "Press Enter to return to menu..."
             ;;
-        5)
+        6)
             echo "Installing tools inside Kali..."
 
-            proot-distro login kali -- bash -c "apt update && apt install -y nmap whois dnsutils net-tools whatweb nikto wafw00f theharvester recon-ng amass sqlmap metasploit-framework hydra john crunch"
+            proot-distro login root -- bash -c "apt update && apt install -y nmap whois dnsutils net-tools whatweb nikto wafw00f theharvester recon-ng amass sqlmap metasploit-framework hydra john crunch"
 
             if [ $? -ne 0 ]; then
                 echo ""
@@ -95,11 +104,11 @@ while true; do
                 read -p "Press Enter to continue..."
             fi
             ;;
-        6)
+        7)
             echo "Thanks for your support! Opening project page..."
             termux-open-url https://github.com/mhmoud-jma/Install.kali
             ;;
-        7)
+        8)
             echo "Exiting..."
             exit 0
             ;;
