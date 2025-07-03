@@ -4,15 +4,17 @@ export TERM=xterm-256color
 while true; do
     printf "\033c" 
 
-    echo "Kali Linux Installer Menu"                                                echo "=============================="
-    echo "1. Install Kali (Method 1)"
-    echo "2. Install Kali (Method 2)"
-    echo "3. Install Kali (Method 3)"                                               echo "4. Intsall kali (Nethunter)"
-    echo "5. Show Available Tools"
-    echo "6. Install Tools inside Kali"
-    echo "7. Support Project (Give a Star ⭐)"
+    echo "Kali Linux Installer Menu"  
+    echo "===================================="
+    echo "1. Install Kali (Method 1)          "
+    echo "2. Install Kali (Method 2)          "
+    echo "3. Install Kali (Method 3)          " 
+    echo "4. Intsall kali (Nethunter) Preferably "
+    echo "5. Show Available Tools             "
+    echo "6. Install Tools inside Kali        "
+    echo "7. Support Project (Give a Star ⭐) "
     echo "8. Exit"
-    echo "=============================="
+    echo "===================================="
     read -p "Choose an option: " option
 
     case $option in
