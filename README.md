@@ -1,26 +1,28 @@
-# ⚙️ Kali Linux Installer for Termux (Auto Toolkit) – v3
-
-A powerful and ready-to-use Kali Linux installer for Termux, featuring essential Red Team tools — now upgraded with **v3** including three different installation methods, command-line flexibility, and improved support for Termux.
 
 ---
 
-## 🚀 New in v3
+# ⚙️ Kali Linux Installer for Termux (Auto Toolkit) – v4
 
-- ✅ Switched from `pkg` to `apt` for better compatibility with Termux
-- ✅ Added error handling for missing Kali installation
-- ✅ Includes 3 different installation methods for Kali
-- ✅ Clear fallback when auto-install fails
-- ✅ Clean interface without color bugs on Termux
-- ✅ Menu now shows manual install instructions if needed
+A powerful and ready-to-use Kali Linux installer for Termux, featuring essential Red Team tools — now upgraded with **v4** including four different installation methods (including NetHunter!), smoother tool installations, and clearer support for Termux.
+
+---
+
+## 🚀 New in v4
+
+- ✅ **Added support for Kali NetHunter** installation in Termux (Method 4)
+- ✅ Improved error handling and user guidance
+- ✅ Enhanced user interface and cleaner script structure
+- ✅ Updated list of tools and references
+- ✅ Menu updated with direct links and better feedback
 
 ---
 
 ## 📦 What's Inside?
 
-- `menu.sh` → Main interactive launcher (auto-installer + tools)
+- `install.sh` → Main interactive launcher (auto-installer + tools)
 - `kali.sh` → Automates Kali installation (method-based)
-- `tools/install-tools.sh` → Installs tools like `nmap`, `sqlmap`, `metasploit`, etc.
-- `T.DROP` → Custom Red Team tool from this repo  
+- Tool installation logic embedded inside menu script
+- **T.DROP** → Custom Red Team tool from this repo  
   → [T.DROP GitHub](https://github.com/mhmoud-jma/T.DROP)
 
 ---
@@ -29,67 +31,68 @@ A powerful and ready-to-use Kali Linux installer for Termux, featuring essential
 
 ### 🔹 Main Menu
 ![Main Menu](photos/Interface.jpg)
-### 🔹 Run kali
-![Run kali](https://github.com/mhmoud-jma/Install.kali/blob/main/Termux%202.jpg)
+### 🔹 Run Kali
+![Run Kali](https://github.com/mhmoud-jma/Install.kali/blob/main/Termux%202.jpg)
 
-To see more screenshots, please visit:(https://github.com/mhmoud-jma/Install.kali/commit/26a59c70124f2e2844666f2b29e58fae783046a3#diff-58916ba9f6962785eaba9773a9a50145633cd8917b32a5c87f80e1440f9343f7)
+For more screenshots, see the [Commits & Changes](https://github.com/mhmoud-jma/Install.kali/commit/26a59c70124f2e2844666f2b29e58fae783046a3#diff-58916ba9f6962785eaba9773a9a50145633cd8917b32a5c87f80e1440f9343f7)
+
 ---
 
 ## 📥 How to Install
 
 ### 1. Download and Run the Project
 
-```bash
+bash 
+```
 apt update && apt upgrade 
-apt install proot
+apt install proot git wget
 git clone https://github.com/mhmoud-jma/Install.kali.git
 cd Install.kali
 chmod +x install.sh
 bash install.sh
 ```
-### 1.1 You may have a problem with the key. 
- ```bash
+1.1 You may have a problem with the key.
+```
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 827C8569F2518CC677FECA1AED65462EC8D5E4C5
 ```
-
-### 2. Run the Installer Menu Manually
-
+2. Run the Installer Menu Manually
+```
 chmod +x install.sh
 bash install.sh
-
+```
 
 ---
 
-### 🧰 Available Tools
+🧰 Available Tools
 
 Recon:
-```
+
 nmap, whois, amass, dnsutils, recon-ng, theHarvester
-```
+
 Scanning:
-```
+
 whatweb, nikto, wafw00f
-```
+
 Exploitation:
-```
+
 sqlmap, metasploit-framework, hydra
-```
+
 Password Cracking:
-```
+
 john, crunch
-```
+
 Phishing:
-```
+
 zphisher, HiddenEye, SocialFish
-```
+
 Extras:
-```
+
 T.DROP → https://github.com/mhmoud-jma/T.DROP
-```
+
 
 ---
 
-🔧 Manual Tool Installation (if auto fails)
+🔧 Manual Tool Installation
 
 If the tools fail to install automatically, you can run this inside Kali:
 ```
@@ -106,18 +109,42 @@ git clone https://github.com/mhmoud-jma/T.DROP
 
 ---
 
-###⭐ Support This Project
+🗺️ Roadmap
 
-If you find this project helpful, please consider giving it a ⭐ on GitHub:
-👉 https://github.com/mhmoud-jma/Install.kali
+✅ V4 Released
+
+Added NetHunter support
+
+Improved installer logic
+
+Enhanced error handling
+
+
+🚀 Coming in V5:
+
+Automatic tool installation inside selected distro
+
+Dynamic detection of installed distros
+
+Better logging and debugging options
+
+Multi-language support for menu interface
+
 
 
 ---
 
-###⚠️ Disclaimer
+⭐ Support This Project
 
-> This script is for educational purposes only. The author is not responsible for any misuse.
-Please use ethically and responsibly.
+If you find this project helpful, please consider giving it a ⭐ on GitHub:
+👉 Install.kali on GitHub
+
+
+---
+
+⚠️ Disclaimer
+
+> This script is for educational purposes only. The author is not responsible for any misuse. Please use ethically and responsibly.
 
 
 
@@ -136,3 +163,5 @@ This project is licensed under the MIT License – see the LICENSE file for deta
 Mahmoud Jmaiel
 Red Team enthusiast & cybersecurity student
 GitHub: @mhmoud-jma
+
+---
