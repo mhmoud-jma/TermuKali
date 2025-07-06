@@ -44,7 +44,8 @@ while true; do
         pkg install git wget proot -y
         git clone https://github.com/Hax4us/Nethunter-In-Termux.git
         cd Nethunter-In-Termux
-        chmod +x kalinethunter
+        chmod +x kalinethunter.sh
+        ./kalinethunter.sh
         echo  " This version is a little different it needs to run this command    ./kalinethunter"
          ;;
        5)
